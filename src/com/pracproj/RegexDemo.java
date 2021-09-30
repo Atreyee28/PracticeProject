@@ -6,7 +6,7 @@ package com.pracproj;
 
 	public static void main(String[] args) {
 
-		String pattern = "[a-z]+";
+		String pattern = "[a-zA-z]+";
 		String check = "Regular Expressions";
 		Pattern p = Pattern.compile(pattern);
 		Matcher c = p.matcher(check);
