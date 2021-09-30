@@ -1,4 +1,4 @@
-package com.pracproj;
+/*package com.pracproj;
 
 	class MyException extends Exception{
 		   String str1;
@@ -21,4 +21,4 @@ package com.pracproj;
 				System.out.println(exp) ;
 			}
 		   }
-		}
+		}*/
