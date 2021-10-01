@@ -11,13 +11,13 @@ public class CreateNewFile {
 		public static void main(String[] args) throws IOException
 	    {
 	        createFileUsingFileClass();
-	        createFileUsingFileOutputStreamClass();
-	        createFileIn_NIO();
+	       // createFileUsingFileOutputStreamClass();
+	        //createFileIn_NIO();
 	    }
 	 
 	    private static void createFileUsingFileClass() throws IOException
 	    {
-	          File file = new File("C://Users//atrmonda//eclipse-worttkspace//PracticeProject//testFile1.txt");
+	          File file = new File("C://Users//atrmonda//eclipse-workspace//PracticeProject//testFile1.txt");
 	  
 	          //Create the file
 	          if (file.createNewFile()){
@@ -32,7 +32,7 @@ public class CreateNewFile {
 	          writer.close();
 	    }
 	 
-	    private static void createFileUsingFileOutputStreamClass() throws IOException
+	   /* private static void createFileUsingFileOutputStreamClass() throws IOException
 	    {
 	        String data = "Test data";
 	        FileOutputStream out = new FileOutputStream("C://Users//atrmonda//eclipse-workspace//PracticeProject//testFile2.txt");
@@ -50,6 +50,6 @@ public class CreateNewFile {
 	                    StandardCharsets.UTF_8,
 	                    StandardOpenOption.CREATE,
 	                    StandardOpenOption.APPEND);
-	    }
+	    }*/
 }
 

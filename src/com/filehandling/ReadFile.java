@@ -4,10 +4,9 @@ package com.filehandling;
 	import java.nio.file.*; 
 	import java.io.*; 
 	public class ReadFile
-	{ 
-	  public static List<String> readFileInList(String fileName) 
+	{ public static List<String> readFileInList(String fileName) 
 	  { 
-	  
+		  
 	    List<String> lines = Collections.emptyList(); 
 	    try
 	    { 
@@ -21,13 +20,17 @@ package com.filehandling;
 	    } 
 	    return lines; 
 	  } 
+
 	  public static void main(String[] args) 
-	  { 
-	    List l = readFileInList("C://Users//atrmonda//eclipse-workspace//PracticeProject//testFile2.txt"); 
-	  
-	    Iterator<String> itr = l.iterator(); 
-	    while (itr.hasNext()) 
-	      System.out.println(itr.next()); 
+	  { 	
+		  Scanner sc= new Scanner(System.in);
+		  System.out.println("Enter Full file path:");
+		  String a=sc.next();
+		  List l = readFileInList(a); 
+		  
+		    Iterator<String> itr = l.iterator(); 
+		    while (itr.hasNext()) 
+		      System.out.println("The content is: " +itr.next()); 
 	  } 
 	}
 
