@@ -17,7 +17,7 @@ public class CreateNewFile {
 	 
 	    private static void createFileUsingFileClass() throws IOException
 	    {
-	          File file = new File("C://Users//atrmonda//eclipse-workspace//PracticeProject//testFile1.txt");
+	          File file = new File("C://Users//atrmonda//eclipse-worttkspace//PracticeProject//testFile1.txt");
 	  
 	          //Create the file
 	          if (file.createNewFile()){
